@@ -1,18 +1,20 @@
+/*DEBUG = False
+
+ALLOWED_HOSTS = ['54.158.30.212']
+ALLOWED_HOSTS.append('davidyoon.us')
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")*/
+
 html {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.85);
 }
 html {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-}
-nav {
-  color: #fff;
-  line-height: 56px;
 }
 a {
   text-decoration: none;
@@ -23,57 +25,190 @@ img {
 div {
   display: block;
 }
+h1 {
+  display: block;
+}
+h2 {
+ display: block;
+}
+h3 {
+  display: block;
+}
+h4 {
+  display: block;
+}
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0); !important
+}
 /* ########################top nav */
-#logo-container {
-  webkit-animation-duration : 1.5s;
-  webkit-animation-delay : 0.5s;
-  webkit-animation-iteration-count :1;
+.dropdown-content {
+  white-space: nowrap;
+  position: absolute;
+  top: 56px;
+  left: 7px;
+  opacity: 1;
+  display: none;
 }
-.nav-wrapper .brand-logo img {
-  height: 3rem;
-  margin-bottom: -1rem;
+.navbar-fixed {
+  height: 70px;
 }
-/* #############################PARALLAX*/
-.parallax-container {
-  min-height: 450px;
-  height: 450px;
+
+.navcolor {
+  background-color: #2C3E50;
 }
-.parallax-container .section {
-  width: 100%;
-  margin-top: 2.5%;
+.navbar-fixed nav {
+  line-height: 70px;
+  height: 70px;
+}
+.themecolor {
+  background-color: #EC6841;
+}
+.themecolor-text {
+  color: #EC6841
+}
+.jumper:hover {
+  background-color: #426B96;
+}
+// .name-anime {
+//   -webkit-animation-duration : 1.5s;
+//   -webkit-animation-delay : 0.5s;
+//   -webkit-animation-iteration-count :1;
+// }
+.jumper {
+  background-color: #2C3E50;
+  -webkit-trasition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease
+}
+.topicon {
+  width: 3rem;
+  margin-top: .75rem;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 600px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 15%;
+  .topicon {
+    width: 2rem;
   }
 }
-@media only screen and (max-width: 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 15%;
-  }
+nav .brand-logo {
+  font-size: 2.5rem;
 }
-#topmsg {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-iteration-count: 1;
+/* #############################PARALLAX*/
+#top {
+  min-height: 625px;
+  padding-top: 5rem;
+  margin-top: -5rem;
 }
-#dash {
+.underline {
+  background-color: white;
+  width: 200px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
   display: inline-block;
-  height: 3px;
-  width: 20px;
-  background-color: black;
-  animation: blink .5s infinite linear;
 }
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.center img {
+  width: 300px;
+  position: relative;
+  margin-top: 3rem;
+}
+.faceanime {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+.nameanime {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+}
+.background1, .background2{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: scaleY(0.9);
+  height: 550px;
+}
+.background1 {
+  margin-top: -1.5rem;
+  background-image: url("../images/background3.jpg");
+}
+.background2 {
+  background-image: url("../images/background7.jpg");
+  opacity: 0.8
+}
+.marginbtm {
+  margin-bottom: 0rem; !important
+  margin-top: -1rem; !important
+}
+.tap-target-content {
+  background-color: #EC6841
+}
+.tabs .indicator {
+  background-color: #EC6841
+}
+.fadeout-text {
+  opacity: 1;
+  transition: opacity .25s;
+  animation: 0;
+}
+.icon-block {
+  text-align: center;
+}
+/*######################ABOUT ME##################### */
+#aboutme {
+  margin-top: -4rem;
+  padding-top: 4rem; !important
+}
+div .me-icons {
+  width: 125px;
+  margin-top: 2.5rem;
+}
+.temp_hidden {
+  opacity: 0;
+  transform: translateX(0px);
+}
+/*########################PROJECT########################*/
+#projects {
+  margin-top: -6rem;
+  padding-top: 5rem;
+}
+.lol {
+  color: #FF9C00;
+}
+/* #########################Skills############################## */
+.skills {
+  margin-top: -6rem;
+  padding-top: 5rem;
+}
+.temp-hidden {
+  opacity: 0;
+  transform: translateX(0px);
+  line-height: 2.25;
+  font-size: 1.1rem;
+}
+.skills-img img {
+  width: 100px;
+}
+.lift-up {
+  margin-top: -3rem;
+}
+/* #############################Footer################################# */
+#contact h5 i {
+  font-size: 40px;
+  vertical-align: middle;
+  margin-top: -0.26rem;
+}
+.page-footer {
+  background-color: #EC6841; !important
+  height: 300px; !important
+}
+#contact .topicon {
+  width: 4rem;
+  margin-right: -.1rem;
+  margin-left: -.1rem;
+  border-radius: 50%;
+  margin-top: 2rem; !important
 }

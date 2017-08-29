@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>David Yoon</title>
+  <meta name="sub-title" content="Be water my friend."/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -8,42 +10,201 @@
   <link type="text/css" rel="stylesheet" href="static/css/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" href="static/css/index.css" media="screen,projection">
   <link rel="stylesheet" href="static/css/animate.css"/>
-  </script>
-  <title>David Yoon</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="static/js/style.js"></script>
+  <script type="text/javascript" src="static/js/materialize.js"></script>
+  <script type="text/javascript" src="static/js/typed.min.js"></script>
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav class="black" role="navigation">
+  <div class="navbar-fixed" id="navbar">
+    <nav  class="navcolor" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" class="left jumper brand-logo white-text dropdown-button animated fadeInLeftBig" href="#top" data-activates="dropdown1">
-          &nbsp;<img src="static/images/me.jpg" class="circle"/>&nbsp;David Yoon&nbsp;&nbsp;</a>
-        <ul id="dropdown1" class="dropdown-content" style="white-space: nowrap; position: absolute; top: 56px; left: 7px; opacity: 1; display: none;">
+        <a class="left jumper white-text dropdown-button animated logosize fadeInLeftBig brand-logo" href="#top" data-activates="dropdown1">
+          <i class="poz material-icons">dehaze</i>David Yoon</a>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a class="jumper white-text" href="#aboutme">About Me</a></li>
           <li><a class="jumper white-text" href="#projects">Projects</a></li>
           <li><a class="jumper white-text" href="#skills">Skills</a></li>
           <li><a class="jumper white-text" href="#contact">Contact</a></li>
         </ul>
+        <ul class="right">
+          <li class="temp-hidden"><a href="https://www.linkedin.com/in/david-yoon-a29972139/" target="_blank" class="topbutton"><img src="static/images/linkedin_icon.png" onmouseover="this.src='static/images/linkedin_icon_hover.png'" onmouseout="this.src='static/images/linkedin_icon.png'" class="topicon" id="linkedin"></a></li>
+          <li class="temp-hidden"><a href="static/images/DavidYoon_resume-origin.docx" class="topbutton"><img src="static/images/pdf_icon.png" onmouseover="this.src='static/images/pdf_icon_hover.png'" onmouseout="this.src='static/images/pdf_icon.png'" class="topicon" id="resume"></a></li>
+          <li class="temp-hidden"><a href="https://github.com/davidyoon1001" target="_blank" class="topbutton"><img src="static/images/github_icon.png" onmouseover="this.src='static/images/github_icon_hover.png'" onmouseout="this.src='static/images/github_icon.png'" class="topicon" id="github"></a></li>
+          <li class="temp-hidden"><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=new" target="_blank" class="browser-default topbutton"><img src="static/images/email_icon.png" onmouseover="this.src='static/images/email_icon_hover.png'" onmouseout="this.src='static/images/email_icon.png'" class="topicon" id="email"></a></li>
+          <li class="temp-hidden"><a href="https://www.instagram.com/davidyoon1001/" target="_blank" class="topbutton"><img src="static/images/insta_icon.png" onmouseover="this.src='static/images/insta_icon_hover.png'" onmouseout="this.src='static/images/insta_icon.png'" class="topicon" id="instagram"></a></li>
+        </ul>
       </div>
     </nav>
   </div>
-  <div class="parallax-container" id="top">
+  <!-- <div class="parallax-container" id="top">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h2 class="header animated rubberBand center black-text text" id="topmsg"><div class="content">
-          </div></h2>
-          <h3 class="header center light black-text" id="cursorobj">
-          <span class="black-text" id="submsg">whaterever</span>
-          <span id="dash"></span></h3>
+          <h2 class="header animated rubberBand center black-text" id="topmsg"></h2>
+          <h3 class="header center light black-text">
+            <span id="submsg"></span>
+            <span class="typed-cursor">_</span></h3>
         </div>
       </div>
     </div>
-    <div class="parallax white">
-      <img src="static/images/background.jpg" id="bg1" alt="Background 1" style="display: block; stransform: translate3d(-50%, 138px, 0px);"/>
+    <div class="parallax">
+      <img src="static/images/background1.jpg" data-speed="1.0" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 0px, 0px);"/>
+    </div>
+  </div> -->
+  <div class="parallax-container themecolor" id="top">
+    <div class="center">
+      <img src="static/images/me.jpg" class="circle center animated fadeInDown faceanime" onmouseover="this.className='circle center animated pulse'" onmouseout="this.className='circle center'"/>
+      <div class="container">
+        <div class="row center animated fadeIn nameanime">
+          <h1 class="header center white-text marginbtm nameanime" onmouseover="this.className='header animated tada center white-text marginbtm'" onmouseout="this.className='header center white-text marginbtm'">David Yoon</h1>
+          <div class="underline line-center"></div>
+          <h5 class="header center light white-text">Full Stack Web Developer</h5>
+        </div>
+      </div>
     </div>
   </div>
-  <!--Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/style.js"></script>
+  <div class="container" id="aboutme">
+    <div class="section no-pad-bot " >
+      <ul>
+        <li class="temp_hidden"><h2 class="header center themecolor-text light">About Me</h2></li>
+        <div class="row center-align">
+          <div class="col s3">
+            <img class="circle me-icons pulse" src="static/images/research.png"/>
+          </div>
+          <div class="col s9" id="swipe-me1">
+            <li class="temp_hidden"><h5 class="header left-align light" style="line-height: 1.5;">
+              A dedicated and passionate front-end & back-end developer who
+              loves challenge for the opportunity to learn. I am a
+              recent graduate from <a href="http://www.codingdojo.com/" target="_blank" style="text-decoration: underline; color=#06AAE2;">Coding Dojo</a>,
+              and <span class="themecolor-text">currently seeking opportunities</span> to apply my abilities and for more learning opportunities in hopes to reach
+              my ultimate goal as a developer.
+              </h5>
+            </li>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+  <div class="parallax background1"></div>
+  <div class="container">
+    <div class="section" id="projects">
+      <h2 class="header center themecolor-text light">Projects</h2>
+      <div class="row">
+        <ul class="tabs">
+          <li class="tab col s6"><a href="#project1"><h5 class="lol">Realtime game search</h5></a></li>
+          <li class="tab col s6"><a href="#project2"><h5>second project </h5></a></li>
+          <div class="indicator"></div>
+        </ul>
+        <br />
+        <div id="project1" class="col s12" >
+          <h5 class="left-align flow-text">A <a class="lol" href="http://na.leagueoflegends.com/" taget="_blank">League of Legends</a>
+            realtime game search site that provides data of the participants in that particular match by the submitted username. Always
+          dreamed about making my own site of my favorite game.</h5>
+          <h6 class="flow-text">- Featured by using <a class="lol" href="https://developer.riotgames.com/api-methods/" target="_blank"><u>Riot games API</u></a>, Python and Flask.</h6>
+          <h6 class="flow-text">- Features participants username, rank, champion playing, summoner spells, winning streak, numbers of game played and win rates.</h6>
+          <a class="waves-effect waves-light btn-large yellow darken-3" href="http://bentome.jimho.us/" target="_blank">Site</a>
+          <a class="waves-effect waves-light btn-large yellow darken-3" href="https://github.com/davidyoon1001/LeagueOfLegends" target="_blank">GitHub</a>
+        </div>
+        <div id="project2" class="col s12">
+          <h5 class="left-align black-text flow-text">I worked jointly with CA Assembly District Delegates to create an <b>online voter community tool</b> in the <a href="http://mean.io" target="_blank" class="red-text text-darken-2"><u>MEAN</u></a> stack, using real live data from <a href="https://votesmart.org/share/api" target="_blank" class="red-text text-darken-2"><u>Vote Smart API</u></a>. After the presidential election of 2016, I felt the need to contribute toward voter information and organization.</h5>
+          <h6 class="flow-text">&nbsp;• Personal live feed of current state ballot measures</h6>
+          <h6 class="flow-text">&nbsp;• User Groups/Endorsements system with quorum feature</h6>
+          <h6 class="flow-text">&nbsp;• Real-time <a href="https://socket.io/" target="_blank" class="red-text text-darken-2"><u>Socket.IO</u></a> chat (global and groups)</h6>
+          <br />
+          <a class="waves-effect waves-light btn-large red darken-2" href="https://github.com/noahneumark/voter_gab" target="_blank">GitHub</a>
+          <a class="waves-effect waves-light btn-large red darken-2" href="http://votergab.jimho.us/" target="_blank">Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ########################################################################################################### -->
+  <div class="parallax background2"></div>
+  <div class="section center skills" id="skills">
+    <h2 class="initial-hidden themecolor-text light">Skills</h2>
+    <div class="row container valign-wrapper lift-up">
+      <div class="col s3">
+        <ul class="skills-img">
+          <li class="temp-hidden"><img src="static/images/python.png"></li>
+          <li class="temp-hidden themecolor-text" style="font-weight: bold;">Python</li>
+          <li class="temp-hidden">Python</li>
+          <li class="temp-hidden">MySQL</li>
+          <li class="temp-hidden">Flask</li>
+          <li class="temp-hidden">AJAX</li>
+          <li class="temp-hidden">Django</li>
+        </ul>
+      </div>
+      <div class="col s3">
+        <ul class="skills-img">
+          <li class="temp-hidden"><img src="static/images/mean.png"></li>
+          <li class="temp-hidden themecolor-text" style="font-weight: bold;">MEAN</li>
+          <li class="temp-hidden">JavaScript</li>
+          <li class="temp-hidden">MongoDB</li>
+          <li class="temp-hidden">Express.js</li>
+          <li class="temp-hidden">Angular</li>
+          <li class="temp-hidden">Node.js</li>
+        </ul>
+      </div>
+      <div class="col s3">
+        <ul class="skills-img">
+            <li class="temp-hidden"><img src="static/images/ruby.png"></li>
+            <li class="temp-hidden themecolor-text" style="font-weight: bold;">Ruby</li>
+            <li class="temp-hidden">Ruby</li>
+            <li class="temp-hidden">RSpec</li>
+            <li class="temp-hidden">Rails</li>
+            <li class="temp-hidden">Capybara</li>
+            <li class="temp-hidden">PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="col s3">
+        <ul class="skills-img">
+          <li class="temp-hidden"><img src="static/images/html.png"></li>
+          <li class="temp-hidden">HTML5</li>
+          <li class="temp-hidden">Materialize</li>
+          <li class="temp-hidden">jQuery</li>
+          <li class="temp-hidden">Bootstrap</li>
+          <li class="temp-hidden">Socket.io</li>
+          <li class="temp-hidden">React (in progress)</li>
+          <li class="temp-hidden">Vim (in progress)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer" id="contact">
+    <div class="section container">
+      <div class="row center">
+          <div class="col s12">
+            <h2 class="white-text light" style="margin-top: 0rem;">Contact</h2>
+          </div>
+          <ul>
+            <div id="dropit">
+              <div class="col s12">
+                <li class="temp_hidden"><h5 class="white-text light" style="margin-bottom: 2rem;">Feel free to get in touch with me! </h5></li>
+              </div>
+              <div class="col s6">
+                <li class="temp_hidden"><h5 class="light"><i class="material-icons white-text">email</i>davidyoon1001@gmail.com</h5></li>
+              </div>
+              <div class="col s6">
+                <li class="temp_hidden"><h5 class="light"><i class="material-icons white-text">phonelink_ring</i>760) 909 1701</h5></li>
+              </div>
+              <li class="temp_hidden"><div class="col s12">
+                <a href="https://www.linkedin.com/in/david-yoon-a29972139/" target="_blank" class="topbutton"><img src="static/images/linkedin_icon_hover.png" onmouseover="this.src='static/images/linkedin_icon.png'" onmouseout="this.src='static/images/linkedin_icon_hover.png'" class="topicon" id="linkedin"></a>
+                <a href="static/images/DavidYoon_resume-origin.docx" class="topbutton"><img src="static/images/pdf_icon_hover.png" onmouseover="this.src='static/images/pdf_icon.png'" onmouseout="this.src='static/images/pdf_icon_hover.png'" class="topicon" id="resume"></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=15dfe26bd826b1ec" target="_blank" class="browser-default topbutton"><img src="static/images/email_icon_hover.png" onmouseover="this.src='static/images/email_icon.png'" onmouseout="this.src='static/images/email_icon_hover.png'" class="topicon" id="email"></a>
+                <a href="https://github.com/davidyoon1001" target="_blank" class="topbutton"><img src="static/images/github_icon_hover.png" onmouseover="this.src='static/images/github_icon.png'" onmouseout="this.src='static/images/github_icon_hover.png'" class="topicon" id="github"></a>
+                <a href="https://www.instagram.com/davidyoon1001/" target="_blank" class="topbutton"><img src="static/images/insta_icon_hover.png" onmouseover="this.src='static/images/insta_icon.png'" onmouseout="this.src='static/images/insta_icon_hover.png'" class="topicon" id="instagram"></a>
+              </div></li>
+            </div>
+          </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container right">
+      <p class="light right"> David Yoon © August 2017 </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
