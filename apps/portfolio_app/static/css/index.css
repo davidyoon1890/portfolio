@@ -178,6 +178,12 @@ div .me-icons {
 .lol {
   color: #FF9C00;
 }
+.survey {
+  color: #01C73C;
+}
+.dashboard {
+  color: #1976D3;
+}
 /* #########################Skills############################## */
 .skills {
   margin-top: -6rem;
