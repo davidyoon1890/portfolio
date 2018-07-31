@@ -38,7 +38,10 @@ h4 {
   display: block;
 }
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0); !important
+  background-color: black;
+}
+.text-color {
+  color: white;
 }
 /* ########################top nav */
 .dropdown-content {
@@ -50,15 +53,20 @@ nav ul a:hover {
   display: none;
 }
 .navbar-fixed {
-  height: 70px;
+  height: 50px;
+  right: 0;
+  left: 0;
 }
-
+.width-65 {
+  margin: 0 auto;
+  max-width: 730px;
+}
 .navcolor {
-  background-color: #2C3E50;
+  background-color: white;
 }
 .navbar-fixed nav {
-  line-height: 70px;
-  height: 70px;
+  line-height: 50px;
+  min-height: 50px;
 }
 .themecolor {
   background-color: #EC6841;
@@ -66,8 +74,15 @@ nav ul a:hover {
 .themecolor-text {
   color: #EC6841
 }
+.name-logo {
+    position: absolute;
+    color: #c71d1d;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
 .jumper:hover {
-  background-color: #426B96;
+  background-color: white;
 }
 // .name-anime {
 //   -webkit-animation-duration : 1.5s;
@@ -75,53 +90,80 @@ nav ul a:hover {
 //   -webkit-animation-iteration-count :1;
 // }
 .jumper {
-  background-color: #2C3E50;
+  background-color: white;
   -webkit-trasition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease
 }
+.margin-hor {
+  margin-bottom: -14px;
+  margin-top: -6px;
+}
 .topicon {
-  width: 3rem;
+  width: 2rem;
   margin-top: .75rem;
   margin-right: -0.75rem;
   margin-left: -0.75rem;
   border-radius: 50%;
 }
+
 @media only screen and (max-width: 600px) {
   .topicon {
     width: 2rem;
   }
 }
 nav .brand-logo {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
+  color: #5e5e5e;
 }
 /* #############################PARALLAX*/
 #top {
-  min-height: 625px;
-  padding-top: 5rem;
-  margin-top: -5rem;
+  min-height: 450px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
-.underline {
+/* .underline {
   background-color: white;
   width: 200px;
   height: 5px;
   border: 1px solid white;
   border-radius: 50%;
   display: inline-block;
-}
-.center img {
-  width: 300px;
+} */
+.intro {
+  font-family: 'Nanum Gothic', sans-serif;
+  /* margin-top: 80px; */
+  font-size: 12px;
+  display: block;
   position: relative;
-  margin-top: 3rem;
+}
+.position1{
+
+  margin-bottom: 25px;
+  float: left;
 }
 .faceanime {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-delay: 0.5s;
 }
+.img-rounded {
+  border-radius: 6px;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
 .nameanime {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-delay: 1s;
+}
+.introduction {
+  /* margin-top: 20px;  */
+    font-size: 16px;
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    font-family: 'Nanum Pen Script', cursive;
+    line-height: 1.2;
+    margin: 0 auto;
 }
 .background1, .background2{
   background-attachment: fixed;
@@ -133,7 +175,7 @@ nav .brand-logo {
 }
 .background1 {
   margin-top: -1.5rem;
-  background-image: url("../images/background3.jpg");
+  background-image: url("../images/background6.jpg");
 }
 .background2 {
   background-image: url("../images/background7.jpg");
@@ -196,7 +238,7 @@ div .me-icons {
   font-size: 1.1rem;
 }
 .skills-img img {
-  width: 100px;
+  width: 70px;
 }
 .lift-up {
   margin-top: -3rem;

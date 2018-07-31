@@ -17,15 +17,15 @@
 </head>
 <body>
   <div class="navbar-fixed" id="navbar">
-    <nav  class="navcolor" role="navigation">
-      <div class="nav-wrapper container">
-        <a class="left jumper white-text dropdown-button animated logosize fadeInLeftBig brand-logo" href="#top" data-activates="dropdown1">
-          <i class="poz material-icons">dehaze</i>David Yoon</a>
+    <nav  class="navcolor navbar-fixed" role="navigation">
+      <div class="nav-wrapper width-65">
+        <a class="left jumper text-color dropdown-button animated logosize fadeInLeftBig brand-logo" href="#top" data-activates="dropdown1">
+          <i class="material-icons margin-hor">dehaze</i>David Yoon</a>
         <ul id="dropdown1" class="dropdown-content">
-          <li><a class="jumper white-text" href="#aboutme">About Me</a></li>
-          <li><a class="jumper white-text" href="#projects">Projects</a></li>
-          <li><a class="jumper white-text" href="#skills">Skills</a></li>
-          <li><a class="jumper white-text" href="#contact">Contact</a></li>
+          <li><a class="jumper text-color" href="#top">About Me</a></li>
+          <li><a class="jumper text-color" href="#projects">Projects</a></li>
+          <li><a class="jumper text-color" href="#skills">Skills</a></li>
+          <li><a class="jumper text-color" href="#contact">Contact</a></li>
         </ul>
         <ul class="right">
           <li class="temp-hidden"><a href="https://www.linkedin.com/in/david-yoon-a29972139/" target="_blank" class="topbutton"><img src="static/images/linkedin_icon.png" onmouseover="this.src='static/images/linkedin_icon_hover.png'" onmouseout="this.src='static/images/linkedin_icon.png'" class="topicon" id="linkedin"></a></li>
@@ -37,19 +37,34 @@
       </div>
     </nav>
   </div>
-  <div class="parallax-container themecolor" id="top">
-    <div class="center">
-      <img src="static/images/me.jpg" class="circle center animated fadeInDown faceanime" onmouseover="this.className='circle center animated pulse'" onmouseout="this.className='circle center'"/>
-      <div class="container">
-        <div class="row center animated fadeIn nameanime">
-          <h1 class="header center white-text marginbtm nameanime" onmouseover="this.className='header animated tada center white-text marginbtm'" onmouseout="this.className='header center white-text marginbtm'">David Yoon</h1>
-          <div class="underline line-center"></div>
-          <h5 class="header center light white-text">Full Stack Web Developer</h5>
-        </div>
-      </div>
+  <div class="row width-65 intro" id="top">
+    <div class='col s12 m6 position1 center'>
+      <img src="static/images/me2.jpg" class="fadeInDown faceanime img-rounded"/>
     </div>
+    <div class="col s12 m6 position1">
+      <p class='introduction' >David(yeojin) Yoon
+      <br>
+      <br>
+      I'm a full stack developer who is interested in making useful results based on raw practical data in the world and prefer automating everything I can do. I have experiences in data analyses that have helped me improve my software developing skills and understand the web development.
+      <br>
+      <br>
+      I've recently graduated from <a href="http://www.codingdojo.com/" target="_blank" style="text-decoration: none; color=#06AAE2;">Coding Dojo</a>, and <span class="themecolor-text">currently seeking opportunities</span> to apply my abilities and for more learning opportunities in hopes to reach my ultimate goal as a developer.
+      <br>
+      <!-- <br>
+      I'm a financial data analyst who is interested in making useful results based on raw financial data in the world and prefer automating everything I can do. I have lots of experiences in financial data analyses that have helped me improve my software developing skills and understand the literature of finance industry. -->
+ </p>
+
+    </div>
+      <!-- <div class="container">
+        <div class="row center animated fadeIn nameanime">
+          <h1 class="header center text-color marginbtm nameanime" onmouseover="this.className='header animated tada center white-text marginbtm'" onmouseout="this.className='header center white-text marginbtm'">David Yoon</h1> -->
+          <!-- <div class="underline line-center"></div> -->
+          <!-- <h5 class="header center light text-color">Full Stack Web Developer</h5> -->
+        <!-- </div>
+      </div> -->
+
   </div>
-  <div class="container" id="aboutme">
+  <!-- <div class="tab col 6" id="aboutme">
     <div class="section no-pad-bot " >
       <ul>
         <li class="temp_hidden"><h2 class="header center themecolor-text light">About Me</h2></li>
@@ -58,7 +73,7 @@
             <img class="circle me-icons pulse" src="static/images/research.png"/>
           </div>
           <div class="col s9" id="swipe-me1">
-            <li class="temp_hidden"><h5 class="header left-align light" style="line-height: 1.5;">
+            <li class="temp_hidden"><h5 class="header left-align light introduction" style="line-height: 1.5;">
               A dedicated and passionate front-end & back-end developer who
               loves challenge for the opportunity to learn. I am a
               recent graduate from <a href="http://www.codingdojo.com/" target="_blank" style="text-decoration: underline; color=#06AAE2;">Coding Dojo</a>,
@@ -71,21 +86,21 @@
 
       </ul>
     </div>
-  </div>
+  </div> -->
   <div class="parallax background1"></div>
-  <div class="container">
+  <div class="container width-65">
     <div class="section" id="projects">
       <h2 class="header center themecolor-text light">Projects</h2>
       <div class="row">
         <ul class="tabs">
-          <li class="tab col s4"><a href="#project1"><h5 class="lol">Realtime game search</h5></a></li>
+          <li class="tab col s4"><a href="#project1"><h5 class="lol">Realtime search</h5></a></li>
           <li class="tab col s4"><a href="#project2"><h5 class="survey">Survey</h5></a></li>
           <li class="tab col s4"><a href="#project3"><h5 class="dashboard">Dashboard</h5></a></li>
           <div class="indicator"></div>
         </ul>
         <br />
         <div id="project1" class="col s12" >
-          <h5 class="left-align flow-text">A <a class="lol" href="http://na.leagueoflegends.com/" taget="_blank">League of Legends</a>
+          <h5 class="left-align flow-text">A <a class="lol" href="http://na.leagueoflegends.com/" target="_blank">League of Legends</a>
             realtime game search site that provides data of the participants in that particular match by the submitted username. </h5>
           <h6 class="flow-text">- Featured by using <a class="lol" href="https://developer.riotgames.com/api-methods/" target="_blank"><u>Riot games API</u></a>, Python and Flask.</h6>
           <h6 class="flow-text">- Features participants username, rank, champion playing, summoner spells, winning streak, numbers of game played and win rates.</h6>
@@ -95,7 +110,7 @@
         <div id="project2" class="disabled col s12">
           <h5 class="left-align flow-text">Led by a local development assembly for final exam, a community
             site features posts and comment about topics.</h5>
-            <h6 class="flow-text">- Language used <u>MongoDB</u>, <u>Express</u>, <u>AngularJS</u>, and <u>Node.js</u></h6>
+            <h6 class="flow-text">- Language used <u class="survey">MongoDB</u>, <u class="survey">Express</u>, <u class="survey">AngularJS</u>, and <u class="survey">Node.js</u></h6>
             <h6 class="flow-text">- Features login & registration, user can create posts and comments on other user's posts</h6>
             <a class="waves-effect waves-light btn-large disabled">Site</a>
             <a class="waves-effect waves-light btn-large green" href="https://github.com/davidyoon1001/Survey" target="_blank">GitHub</a>
@@ -103,7 +118,7 @@
         <div id="project3" class="disabled col s12">
           <h5 class="left-align flow-text">Worked as a personal project touching Ruby & Rails to create
             a site features posting branches and following parts attached to it. </h5>
-            <h6 class="flow-text">- Language used <u>Ruby</u> & <u>Rails</u></h6>
+            <h6 class="flow-text">- Language used <u class="dashboard">Ruby</u> & <u class="dashboard">Rails</u></h6>
             <h6 class="flow-text">- Features login & registration, user can create branches and other users can join the branch can observe what users joined</h6>
             <a class="waves-effect waves-light btn-large blue darken-1" href="https://github.com/davidyoon1001/Survey" target="_blank">GitHub</a>
         </div>
@@ -113,7 +128,7 @@
 
   <!-- ########################################################################################################### -->
   <div class="parallax background2"></div>
-  <div class="section center skills" id="skills">
+  <div class="section center skills width-65" id="skills">
     <h2 class="initial-hidden themecolor-text light">Skills</h2>
     <div class="row container valign-wrapper lift-up">
       <div class="col s3">
@@ -193,7 +208,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container right">
-      <p class="light right"> David Yoon © August 2017 </p>
+      <p class="light right"> David Yoon © August 2018 </p>
       </div>
     </div>
   </footer>
